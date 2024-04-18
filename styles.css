@@ -1,0 +1,77 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+
+    --primary-nutmeg: hsl(14, 45%, 36%);
+    --primary-raspberry: hsl(332, 51%, 32%);
+    --neutral-0: hsl(0, 0%, 100%);
+    --neutral-100-rose-white: hsl(330, 100%, 98%);
+    --neutral-200-eggshell: hsl(30, 54%, 90%);
+    --neutral-300-lightgrey: hsl(30, 18%, 87%);
+    --neutral-500-wenge-brown: hsl(30, 10%, 34%);
+    --neutral-900-charcoal:hsl(24, 5%, 18%);
+
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+       
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1{
+    color: var(--neutral-900-charcoal);
+    font-size: 40px;
+}
+
+h2{
+    color:var(--primary-nutmeg);
+    font-size: 28px;
+}
+
+h3{
+    color: var(--primary-raspberry);
+    font-size: 20px;
+}
+
+p {
+    line-height: 150%;
+}
+
+.bold-text{
+    font-weight: 700;
+}
+
+.custom-hr{
+    background-color:var(--neutral-100-rose-white);
+    display: none;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--neutral-200-eggshell);
+
+    padding: 80px;;
+}
+
+.recipe-container{
+    max-width: 656px;
+    padding: 40px;
+    background-color: var(--neutral-0);
+    border-radius:24px;
+}
+
+.recipe-container img{
+    max-width: 656px;
+    object-fit: cover;
+    border-radius: 12px;
+}
