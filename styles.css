@@ -14,6 +14,10 @@
 
 }
 
+*{
+    margin:0;
+}
+
 body{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -24,6 +28,7 @@ h1, h2{
     font-family: "Young Serif", serif;
     font-weight: 600;
     font-style: normal;
+    line-height: 100%;
 }
 
 h1{
@@ -43,15 +48,49 @@ h3{
 
 p {
     line-height: 150%;
+    color:var(--neutral-500-wenge-brown);
 }
+
+li{
+    line-height: 240%;
+}
+
+li::marker{
+    margin-right: 20px;
+    color:var(--primary-raspberry);
+    font-weight: 700;
+}
+
+ul, ol{
+    padding: 0 24px ;
+    
+}
+
+li { 
+    padding-left: 16px; 
+} 
+
 
 .bold-text{
     font-weight: 700;
 }
 
-.custom-hr{
-    background-color:var(--neutral-100-rose-white);
-    display: none;
+hr{
+    border:0px;
+  height: 1px; /* Set the height of the line */
+  background-color: var(--neutral-200-eggshell);
+    
+}
+
+.recipe-container .preparation-time{
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-100-rose-white);
+    padding: 28px;
+    border-radius: 12px;
+  
+
 }
 
 .main-page{
@@ -59,19 +98,59 @@ p {
     flex-direction: column;
     align-items: center;
     background-color: var(--neutral-200-eggshell);
+    min-width: 100%;
+}
 
-    padding: 80px;;
+.instructions, .ingredients, .nutrients{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+
 }
 
 .recipe-container{
     max-width: 656px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--neutral-0);
     border-radius:24px;
+    gap:32px;
+    margin:60px;
 }
 
 .recipe-container img{
     max-width: 656px;
     object-fit: cover;
     border-radius: 12px;
+}
+
+.preparation-time{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.title-tagline, .nutrition{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.nutritional-table{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);  
+  grid-template-columns: repeat(2, 1fr);  
+  
+}
+
+.nutritional-item.nutritional-value.bold-text{
+    color:var(--primary-nutmeg);
+}
+
+.nutritional-item{
+    border-bottom: 1px solid var(--neutral-200-eggshell);
+    padding: 12px 12px 12px 32px;  
+     
 }
