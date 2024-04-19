@@ -1,4 +1,9 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-bottom: 20px;
+
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 :root{
@@ -77,7 +82,7 @@ li {
 
 hr{
     border:0px;
-  height: 1px; /* Set the height of the line */
+  height: 1px; 
   background-color: var(--neutral-200-eggshell);
     
 }
@@ -120,6 +125,16 @@ hr{
     margin:60px;
 }
 
+.text-container{
+    max-width: 656px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-0);
+    border-radius:24px;
+    gap:32px;
+    }
+
+
 .recipe-container img{
     max-width: 656px;
     object-fit: cover;
@@ -153,4 +168,65 @@ hr{
     border-bottom: 1px solid var(--neutral-200-eggshell);
     padding: 12px 12px 12px 32px;  
      
+}
+
+@media (max-width: 754px) {
+    .recipe-container{
+        max-width: 70vw;
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width: 375px) {
+    
+
+    h1{
+        font-size: 36px;
+    }
+
+    .recipe-container img{
+        max-width:375px;
+    
+        object-fit: cover;
+        border-radius: 0;
+     
+    }
+
+    .recipe-container{
+        max-width: 375px;
+        min-width: 320px;
+        padding: 0;
+        gap:32px;
+        margin: 0px;
+        border-radius: 0;
+    }
+
+    .text-container{
+        max-width: 100%;
+        padding: 32px;
+        align-items: center;
+        gap:32px;
+
+        }
+
+        .text-container *{
+            max-width: 80vw;
+        }
+
+
+
+        .main-page{
+            background-color: var(--neutral-0);
+           
+        }
+
+
+
+
 }
