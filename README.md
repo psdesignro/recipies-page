@@ -44,7 +44,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 I didn't use CSS grid for a while, but I decided to use it over table, because as far as I know, table is a mess on small devices
 
-I also unse one intermediate media query, that would work  for tablets.
+I also used one intermediate media query, that would work  for tablets.
 
 ### Continued development
 
